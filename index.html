@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bautii.Sab | Desarrollo FiveM y Web</title>
+  <meta name="description" content="Servicios profesionales de desarrollo para servidores de FiveM y páginas web a medida.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Background elements -->
+  <canvas id="background-animation" class="background-canvas"></canvas>
+  <div id="grid-background" class="grid-background"></div>
+
+  <!-- Navigation -->
+  <nav id="menu-bar" class="menu-bar">
+    <div class="nav-glow"></div>
+    <ul class="menu-items">
+      <li class="menu-item">
+        <div class="menu-item-container">
+          <div class="menu-item-glow"></div>
+          <a href="#home" class="menu-link">
+            <span class="menu-icon home-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            </span>
+            <span>Inicio</span>
+          </a>
+          <a href="#home" class="menu-link-back">
+            <span class="menu-icon home-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            </span>
+            <span>Inicio</span>
+          </a>
+        </div>
+      </li>
+      <li class="menu-item">
+        <div class="menu-item-container">
+          <div class="menu-item-glow"></div>
+          <a href="#about" class="menu-link">
+            <span class="menu-icon user-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </span>
+            <span>Sobre Mí</span>
+          </a>
+          <a href="#about" class="menu-link-back">
+            <span class="menu-icon user-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </span>
+            <span>Sobre Mí</span>
+          </a>
+        </div>
+      </li>
+      <li class="menu-item">
+        <div class="menu-item-container">
+          <div class="menu-item-glow"></div>
+          <a href="#webdev" class="menu-link">
+            <span class="menu-icon code-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </span>
+            <span>Web Dev</span>
+          </a>
+          <a href="#webdev" class="menu-link-back">
+            <span class="menu-icon code-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </span>
+            <span>Web Dev</span>
+          </a>
+        </div>
+      </li>
+      <li class="menu-item">
+        <div class="menu-item-container">
+          <div class="menu-item-glow"></div>
+          <a href="#fivem" class="menu-link">
+            <span class="menu-icon server-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            </span>
+            <span>FiveM</span>
+          </a>
+          <a href="#fivem" class="menu-link-back">
+            <span class="menu-icon server-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            </span>
+            <span>FiveM</span>
+          </a>
+        </div>
+      </li>
+      <li class="menu-item">
+        <div class="menu-item-container">
+          <div class="menu-item-glow"></div>
+          <a href="#contact" class="menu-link">
+            <span class="menu-icon message-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </span>
+            <span>Contacto</span>
+          </a>
+          <a href="#contact" class="menu-link-back">
+            <span class="menu-icon message-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </span>
+            <span>Contacto</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+    <div class="theme-toggle-container">
+      <div class="theme-toggle">
+        <span class="sun-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </span>
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle-checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+        <span class="moon-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-title animate-fade-in">
+          <h1>Bautii<span class="text-blue">.Sab</span></h1>
+          <p>Desarrollo profesional de servidores FiveM y páginas web a medida</p>
+        </div>
+        <div class="hero-cta animate-fade-in-up">
+          <a href="https://discord.com/channels/@me/1364746613599244331" target="_blank" rel="noopener noreferrer" class="discord-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            <span>Contactar por Discord</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="animate-on-scroll">Sobre Mí</h2>
+        <p class="animate-on-scroll">Desarrollador apasionado por crear experiencias digitales únicas</p>
+      </div>
+
+      <div class="about-content">
+        <div class="about-image animate-on-scroll">
+          <img src="images/profile.png" alt="Bautii.Sab">
+        </div>
+
+        <div class="about-text animate-on-scroll">
+          <h3>Hola, soy Bautii.Sab</h3>
+          <p>Me especializo en el desarrollo de servidores para FiveM y en la creación de páginas web modernas y atractivas. Con años de experiencia en el sector, ofrezco soluciones personalizadas que se adaptan a las necesidades específicas de cada cliente.</p>
+          <p>Mi objetivo es proporcionar servicios de alta calidad que no solo cumplan con las expectativas, sino que las superen, garantizando siempre un resultado profesional y a la vanguardia de las últimas tecnologías.</p>
+          <div class="skills">
+            <span class="skill-tag javascript">JavaScript</span>
+            <span class="skill-tag lua">Lua</span>
+            <span class="skill-tag react">React</span>
+            <span class="skill-tag nodejs">Node.js</span>
+            <span class="skill-tag fivem">FiveM</span>
+            <span class="skill-tag mysql">MySQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Web Development Section -->
+  <section id="webdev" class="webdev-section">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="animate-on-scroll">Desarrollo Web</h2>
+        <p class="animate-on-scroll">Creación de sitios web modernos, responsivos y optimizados</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card animate-on-scroll" data-delay="0.1">
+          <div class="service-icon blue">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+          </div>
+          <h3>Diseño Web</h3>
+          <p>Interfaces modernas y atractivas que capturan la esencia de tu marca y mejoran la experiencia del usuario.</p>
+        </div>
+        <div class="service-card animate-on-scroll" data-delay="0.2">
+          <div class="service-icon purple">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </div>
+          <h3>Desarrollo Frontend</h3>
+          <p>Implementación de interfaces de usuario interactivas y responsivas utilizando las últimas tecnologías web.</p>
+        </div>
+        <div class="service-card animate-on-scroll" data-delay="0.3">
+          <div class="service-icon green">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+          </div>
+          <h3>Desarrollo Backend</h3>
+          <p>Sistemas robustos y escalables que potencian tu aplicación web con funcionalidades avanzadas.</p>
+        </div>
+        <div class="service-card animate-on-scroll" data-delay="0.4">
+          <div class="service-icon orange">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <h3>SEO</h3>
+          <p>Optimización para motores de búsqueda para mejorar la visibilidad de tu sitio web y atraer más tráfico.</p>
+        </div>
+        <div class="service-card animate-on-scroll" data-delay="0.5">
+          <div class="service-icon red">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3>Mantenimiento</h3>
+          <p>Servicios de mantenimiento continuo para garantizar que tu sitio web funcione sin problemas y se mantenga actualizado.</p>
+        </div>
+        <div class="service-card animate-on-scroll" data-delay="0.6">
+          <div class="service-icon indigo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          </div>
+          <h3>Aplicaciones Web</h3>
+          <p>Desarrollo de aplicaciones web personalizadas que satisfacen necesidades específicas de tu negocio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FiveM Section -->
+  <section id="fivem" class="fivem-section">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="animate-on-scroll">Desarrollo FiveM</h2>
+        <p class="animate-on-scroll">Servicios especializados para servidores de roleplay y gaming</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card animate-on-scroll" data-delay="0.1">
+          <div class="service-icon red">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          </div>
+          <h3>Scripts Personalizados</h3>
+          <p>Desarrollo de scripts a medida para añadir funcionalidades únicas a tu servidor de FiveM.</p>
+        </div>
+        <div class="service-card animate-on-scroll" data-delay="0.2">
+          <div class="service-icon green">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+          </div>
+          <h3>Sistemas de Economía</h3>
+          <p>Implementación de sistemas económicos completos con trabajos, tiendas, propiedades y más.</p>
+        </div>
+        <div class="service-card animate-on-scroll" data-delay="0.3">
+          <div class="service-icon blue">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+          </div>
+          <h3>Optimización de Servidor</h3>
+          <p>Mejora del rendimiento de tu servidor para garantizar una experiencia fluida para todos los jugadores.</p>
+        </div>
+        <div class="service-card animate-on-scroll" data-delay="0.4">
+          <div class="service-icon purple">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+          </div>
+          <h3>Sistemas de Roleplay</h3>
+          <p>Creación de sistemas avanzados para mejorar la experiencia de roleplay en tu servidor.</p>
+        </div>
+        <div class="service-card animate-on-scroll" data-delay="0.5">
+          <div class="service-icon orange">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+          </div>
+          <h3>Interfaces de Usuario</h3>
+          <p>Diseño e implementación de interfaces de usuario modernas y funcionales para tu servidor.</p>
+        </div>
+        <div class="service-card animate-on-scroll" data-delay="0.6">
+          <div class="service-icon indigo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3>Soporte Técnico</h3>
+          <p>Asistencia técnica continua para resolver problemas y mantener tu servidor funcionando correctamente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2 class="animate-on-scroll">Contacto</h2>
+        <p class="animate-on-scroll">¿Interesado en mis servicios? ¡Hablemos!</p>
+      </div>
+
+      <div class="contact-content text-center">
+        <p class="animate-on-scroll">Estoy disponible para discutir tu proyecto y ofrecerte soluciones personalizadas que se adapten a tus necesidades. Contáctame a través de Discord para comenzar a trabajar juntos.</p>
+        <div class="contact-cta animate-on-scroll">
+          <a href="https://discord.com/channels/@me/1364746613599244331" target="_blank" rel="noopener noreferrer" class="discord-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            <span>Contactar por Discord</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Bautii<span class="text-blue">.Sab</span></h2>
+        </div>
+        <div class="footer-copyright">
+          <p>© <span id="current-year"></span> Bautii.Sab. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/background.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
